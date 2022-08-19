@@ -62,7 +62,9 @@ class AddTask extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
                   child: const Text(
                     'cancel',
                     style: TextStyle(fontWeight: FontWeight.w400, fontSize: 16),
